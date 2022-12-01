@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Utils */
+
+footer {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.row {
+    margin: 0;
+
+}
+
+.column {
+    width: calc(100%/3);
+    height: 8rem ;
+    float:left;
+}
+
+.card {
+    width: 80%;
+    height: 80%;
+    background-color: black;
+}
+
+img {
+    height: 6rem;
+    float:left
+}
