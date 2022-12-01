@@ -83,6 +83,6 @@ h4 {
 a[href*=mailto] {
     padding: 10 px 0;
     color: rgb(120, 190, 220);
-
+    text-decoration: none;
 }
 
