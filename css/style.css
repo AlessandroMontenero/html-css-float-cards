@@ -1,46 +1,87 @@
+:root {
+    --colforline: calc(100%/3)
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 
-/* Utils */
-
-footer {
+main {
     width: 70%;
     margin: auto;
     text-align: center;
-}
-.container {
-    width: 100%;
-    margin: 0 auto;
+    font-family: 'Fredoka', sans-serif;
+
 }
 
-.container::after {
+.container {
+    padding: 3rem 0rem;
+}
+
+p {
+    padding: 1rem 0;
+}
+
+.row {
+    width: calc(100% + 6rem);
+    margin: 0 -3rem;
+}
+
+.column{
+    width: var(--colforline);
+    height: 8rem;
+    float: left;
+}
+
+.row:after {
     content: '';
     clear: both;
     display: table;
 }
 
-.row {
-    margin: 0;
-
-}
-
-.column {
-    width: calc(100%/3);
-    height: 8rem ;
-    float:left;
-}
-
-.card {
-    width: 80%;
-    height: 80%;
+.box {
+    margin: 1rem 3rem;
+    height: 6rem;
+    text-align: left;
     background-color: black;
+    box-shadow: 5px 10px 20px grey;
+    display: block;
+}
+
+.infobox {
+    float: left;
+    padding: 1rem 1rem;
 }
 
 img {
     height: 6rem;
-    float:left
+    float: left;
 }
+
+h1 {
+    color: rgb(210, 70, 140);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+h3 {
+    color: white;
+}
+
+h4 {
+    color: white;
+    font-weight: lighter;
+}
+
+a[href*=mailto] {
+    padding: 10 px 0;
+    color: rgb(120, 190, 220);
+
+}
+
