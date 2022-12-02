@@ -11,7 +11,7 @@
 main {
     width: 70%;
     min-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     font-family: 'Fredoka', sans-serif;
 
@@ -36,7 +36,7 @@ p {
     float: left;
 }
 
-.row:after {
+.row::after {
     content: '';
     clear: both;
     display: table;
@@ -48,16 +48,17 @@ p {
     text-align: left;
     background-color: black;
     box-shadow: 5px 10px 20px grey;
-    display: block;
 }
 
 .infobox {
     float: left;
     padding: 1rem 1rem;
+    color: white;
+
 }
 
 img {
-    height: 6rem;
+    height: 100%;
     float: left;
 }
 
@@ -71,12 +72,7 @@ h2 {
     font-weight: lighter;
 }
 
-h3 {
-    color: white;
-}
-
-h4 {
-    color: white;
+h4 {    
     font-weight: lighter;
 }
 
